@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Terminal Resume</title>
-    
+    <title>Gavin Zingsheim: Precision Weather Intelligence</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="hero">
+        <img src="path/to/logo.png" alt="GZ Logo" class="hero-logo">
+        <h1 class="hero-headline">Precision Weather Intelligence. Delivered.</h1>
+        <p class="hero-subheadline">Harness the Future of Forecasting for Your Success.</p>
+        <a href="#contact" class="btn btn-ghost">Get Started</a>
+    </header>
+<!--
     <script async
       src="https://js.stripe.com/v3/buy-button.js">
     </script>
@@ -15,344 +25,79 @@
       publishable-key="pk_test_51S2clORtwf9bqDqz2ACaSrYC1DulxXCQ4lxmg17MYseCjHWQ402qKTTQ4hoMjl6E9Hmiva4cUiKPB2ZI8N8yAHUn00JDrYTfS4"
       >
     </stripe-buy-button>
+    -->
+    <section class="section value-prop">
+        <h2>Beyond the Forecast.</h2>
+        <p>We provide actionable, personalized insights—not just predictions. Whether you manage **global logistics**, optimize **agricultural harvests**, or plan **large-scale events**, our data minimizes your risk and maximizes your opportunity. This is strategic foresight, tailored for your industry.</p>
+        <img src="path/to/abstract_graphic.svg" alt="Abstract Data Graphic" class="abstract-graphic">
+    </section>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <style>
-      body {
-        background-color: #1a202c;
-        /* Dark slate gray */
-        color: #e2e8f0;
-        /* Off-white */
-        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
+    <section class="section services">
+        <div class="service-cards">
+            <div class="card">
+                <img src="path/to/icon1.svg" alt="Magnifying Glass Icon" class="card-icon">
+                <h3>Tailored Insights</h3>
+                <p>Custom forecasts built for your specific needs, from localized microclimates to global patterns.</p>
+            </div>
+            <div class="card">
+                <img src="path/to/icon2.svg" alt="Shield Icon" class="card-icon">
+                <h3>Proactive Preparedness</h3>
+                <p>Minimize risks and maximize opportunities with advance warnings and strategic planning tools.</p>
+            </div>
+            <div class="card">
+                <img src="path/to/icon3.svg" alt="Cloud/Graph Icon" class="card-icon">
+                <h3>Data-Driven Decisions</h3>
+                <p>Leverage cutting-edge meteorological data and analytics for unparalleled accuracy.</p>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="separator">
 
-      .terminal {
-        background-color: #000000;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 24px;
-        width: 100%;
-        max-width: 900px;
-        overflow-y: auto;
-        max-height: 90vh;
-        border: 1px solid #4a5568;
-        word-wrap: break-word;
-      }
+    <section class="section about">
+        <div class="about-content">
+            <img src="path/to/gavin_portrait.jpg" alt="Gavin Zingsheim Portrait" class="about-image">
+            <div class="about-text">
+                <h2>The Science of Certainty. The Art of Insight.</h2>
+                <p>Gavin Zingsheim is a meteorologist dedicated to transforming complex atmospheric data into clear, strategic business advantages. His approach combines decades of scientific rigor with a passion for client success, ensuring you receive the most reliable and actionable weather intelligence available. He builds trust, one accurate forecast at a time.</p>
+            </div>
+        </div>
+    </section>
 
-      .line {
-        white-space: pre-wrap;
-      }
+    <section class="section testimonials">
+        <blockquote>
+            “Gavin’s forecasts transformed our harvest strategy. The precision allowed us to optimize resources and increase yield significantly. Unmatched service.”
+            <footer>— Agricultural CEO, Midwest US</footer>
+        </blockquote>
+    </section>
+    
+    <hr class="separator">
 
-      .prompt {
-        color: #48bb78;
-        /* Green */
-      }
+    <section class="section contact" id="contact">
+        <h2>Ready to See Clearly?</h2>
+        <p class="contact-sub">Connect with Gavin today to discuss your unique forecasting challenges.</p>
 
-      .cursor {
-        display: inline-block;
-        width: 8px;
-        height: 18px;
-        background-color: #e2e8f0;
-        animation: blink 1s step-end infinite;
-        vertical-align: middle;
-        margin-left: 2px;
-      }
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Work Email" required>
+            <textarea placeholder="Tell us about your forecasting needs..." rows="4"></textarea>
+            <button type="submit" class="btn btn-ghost">Send Message</button>
+        </form>
 
-      .output {
-        color: #e2e8f0;
-        margin-top: 8px;
-        margin-bottom: 8px;
-      }
+        <div class="direct-contact">
+            <p>Email: <a href="mailto:gavin@zingsheimmeteo.com">gavin@zingsheimmeteo.com</a></p>
+            <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+        </div>
+    </section>
 
-      .nav-button {
-        transition: transform 0.2s ease-in-out;
-        cursor: pointer;
-        @apply flex items-center justify-center space-x-2 text-sm md: text-base;
-      }
+    <footer>
+        <p>&copy; 2024 Gavin Zingsheim Meteorology. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
 
-      .nav-button:hover {
-        transform: scale(1.05);
-        color: #a0aec0;
-      }
-
-      #terminal-input {
-        opacity: 0;
-        position: absolute;
-        left: -9999px;
-      }
-
-      @keyframes blink {
-
-        from,
-        to {
-          opacity: 1;
-        }
-
-        50% {
-          opacity: 0;
-        }
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-
-      .fade-in {
-        animation: fadeIn 0.5s ease-in-out;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-900 text-gray-200 p-4 sm:p-8">
-    <div class="terminal w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 p-6 sm:p-8 md:p-10">
-      <header class="flex flex-col sm:flex-row justify-between items-center mb-8 fade-in">
-        <h1 class="text-3xl font-bold text-green-400 mb-2 sm:mb-0">
-          <span class="text-red-400">&lt;</span>Gavin <span class="text-red-400">&gt;</span>Sisi's bitch
-        </h1>
-        <nav class="flex space-x-4 text-gray-400">
-          <button id="about-btn" class="nav-button">
-            <i class="fas fa-user-circle"></i>
-            <span>About</span>
-          </button>
-          <button id="projects-btn" class="nav-button">
-            <i class="fas fa-folder-open"></i>
-            <span>Projects</span>
-          </button>
-          <button id="skills-btn" class="nav-button">
-            <i class="fas fa-code"></i>
-            <span>Skills</span>
-          </button>
-        </nav>
-      </header>
-      <div id="terminal-content" class="text-xs sm:text-sm md:text-base">
-        <!-- Content will be generated here -->
-      </div>
-      <!-- Hidden input field for capturing keystrokes -->
-      <input type="text" id="terminal-input">
-    </div>
-    <script>
-      const terminalContent = document.getElementById('terminal-content');
-      const terminalInput = document.getElementById('terminal-input');
-      const contentData = {
-        about: `
-                > about
-                Name: Gavin Zingsheim
-                Title: Senior Project Manager
-
-               
-            `,
-        projects: `
-                > projects
-                
-							<span class="text-green-400">Hubtricity</span>
-                
-                Maximizes hospitality operational efficiency resulting in a 10x increase in terminal value
-                - 
-							<span class="text-gray-400">Designed and delivered a cloud-native platform
-                for hotel management companies, automating workflows to reduce manual reporting from
-                one week to fully automated, enabling time and cost savings of more than $100,000/year.
-                
-                </span>
-                - 
-							<span class="text-gray-400">Increased feature velocity by 30%.</span>
-							<span class="text-green-400">FinTech Dashboard</span>
-                A real-time financial analytics dashboard.
-                - 
-							<span class="text-gray-400">Orchestrated the migration to a microservices architecture.</span>
-                - 
-							<span class="text-gray-400">Reduced data latency by 50%.</span>
-            `,
-        skills: `
-                > skills
-                
-							<span class="text-green-400">// Languages & Frameworks</span>
-                - TypeScript, JavaScript, Node.js, Python, React, Next.js, Django
-
-                
-							<span class="text-green-400">// Cloud & DevOps</span>
-                - AWS, Docker, Kubernetes, CI/CD, Terraform
-
-                
-							<span class="text-green-400">// Methodologies</span>
-                - Agile, Scrum, Kanban, Lean Development
-
-                
-							<span class="text-green-400">// Databases</span>
-                - PostgreSQL, MongoDB, Redis
-            `
-      };
-      let currentLineElement;
-      let commandHistory = [];
-      let historyIndex = -1;
-      // Function to create a new command prompt line
-      const createPromptLine = (commandText = '') => {
-        const lineDiv = document.createElement('div');
-        lineDiv.className = 'line mt-2';
-        lineDiv.innerHTML = `
-							<span class="prompt">$</span>
-							<span id="current-command" class="text-gray-400">${commandText}</span>
-							<span class="cursor"></span>`;
-        terminalContent.appendChild(lineDiv);
-        currentLineElement = lineDiv.querySelector('#current-command');
-        terminalInput.value = commandText;
-        scrollToBottom();
-      };
-      // Function to animate typing out the output
-      const typeOutput = (text) => {
-        return new Promise(resolve => {
-          let i = 0;
-          const lines = text.trim().split('\n');
-          let lineIndex = 0;
-          const typeLine = () => {
-            if (lineIndex >= lines.length) {
-              return resolve();
-            }
-            const line = lines[lineIndex];
-            let charIndex = 0;
-            const outputLineDiv = document.createElement('div');
-            outputLineDiv.className = 'output line';
-            terminalContent.appendChild(outputLineDiv);
-            const typeInterval = setInterval(() => {
-              if (charIndex < line.length) {
-                outputLineDiv.innerHTML += line.charAt(charIndex);
-                charIndex++;
-              } else {
-                clearInterval(typeInterval);
-                lineIndex++;
-                typeLine();
-              }
-              scrollToBottom();
-            }, 10);
-          };
-          typeLine();
-        });
-      };
-      // Function to parse and execute a command
-      const executeCommand = async (command) => {
-        commandHistory.push(command);
-        historyIndex = commandHistory.length;
-        const commandDiv = document.createElement('div');
-        commandDiv.className = 'line';
-        commandDiv.innerHTML = `
-							<span class="prompt">$</span>
-							<span class="text-gray-400">${command}</span>`;
-        terminalContent.appendChild(commandDiv);
-        // Remove the current typing prompt
-        if (currentLineElement && currentLineElement.parentNode) {
-          currentLineElement.parentNode.remove();
-        }
-        const cleanCommand = command.trim().toLowerCase();
-        let outputText = '';
-        switch (cleanCommand) {
-          case 'about':
-          case './about.sh':
-            outputText = contentData.about;
-            break;
-          case 'projects':
-          case './projects.sh':
-            outputText = contentData.projects;
-            break;
-          case 'skills':
-          case './skills.sh':
-            outputText = contentData.skills;
-            break;
-          case 'help':
-            outputText = `
-                        Available commands:
-                        - about
-                        - projects
-                        - skills
-                        - clear
-                        - help
-                    `;
-            break;
-          case 'clear':
-            terminalContent.innerHTML = '';
-            createPromptLine();
-            return;
-          default:
-            outputText = `command not found: ${command}`;
-            break;
-        }
-        await typeOutput(outputText);
-        createPromptLine();
-        terminalInput.focus();
-      };
-      // Function to handle keyboard input
-      const handleKeyPress = (e) => {
-        // Check if the target is one of the nav buttons to prevent default behavior
-        if (e.target.tagName === 'BUTTON') {
-          return;
-        }
-        terminalInput.focus();
-        if (e.key === 'Enter') {
-          e.preventDefault();
-          executeCommand(terminalInput.value);
-        } else if (e.key === 'ArrowUp') {
-          e.preventDefault();
-          if (historyIndex > 0) {
-            historyIndex--;
-            currentLineElement.textContent = commandHistory[historyIndex];
-            terminalInput.value = commandHistory[historyIndex];
-          }
-        } else if (e.key === 'ArrowDown') {
-          e.preventDefault();
-          if (historyIndex < commandHistory.length - 1) {
-            historyIndex++;
-            currentLineElement.textContent = commandHistory[historyIndex];
-            terminalInput.value = commandHistory[historyIndex];
-          } else if (historyIndex === commandHistory.length - 1) {
-            historyIndex++;
-            currentLineElement.textContent = '';
-            terminalInput.value = '';
-          }
-        }
-      };
-      // Helper function to scroll to the bottom of the terminal
-      const scrollToBottom = () => {
-        terminalContent.scrollTop = terminalContent.scrollHeight;
-      };
-      // Initial setup on page load
-      window.onload = () => {
-        // Set up event listeners for navigation buttons
-        document.getElementById('about-btn').addEventListener('click', () => executeCommand('about'));
-        document.getElementById('projects-btn').addEventListener('click', () => executeCommand('projects'));
-        document.getElementById('skills-btn').addEventListener('click', () => executeCommand('skills'));
-        // Set up keyboard event listener for the document
-        document.addEventListener('keydown', handleKeyPress);
-        // Hide the input field and keep focus on it
-        terminalInput.style.position = 'absolute';
-        terminalInput.style.left = '-9999px';
-        terminalInput.focus();
-        // Re-focus the input field on any click within the terminal
-        document.addEventListener('click', () => terminalInput.focus());
-        // Initial welcome message
-        const welcomeMessage = `
-                Welcome to my digital resume.
-                Type a command to navigate (e.g., 'about', 'help', 'projects', 'skills').
-            `;
-        typeOutput(welcomeMessage).then(() => {
-          createPromptLine();
-          terminalInput.focus();
-        });
-      };
-      // Update the visible command text as the user types
-      terminalInput.addEventListener('input', () => {
-        if (currentLineElement) {
-          currentLineElement.textContent = terminalInput.value;
-        }
-      });
-    </script>
-  </body>
+</body>
 </html>
+
